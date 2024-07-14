@@ -2,6 +2,7 @@
 
 :root {
   --nunito-sans: "Nunito Sans", Arial, Helvetica, sans-serif;
+  --fadeIn: 0.5s forwards ease;
   --ease-in-out: all 0.3s ease-in-out;
 }
 
@@ -28,4 +29,15 @@ body {
 
 .footer a:visited {
   color: black;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
