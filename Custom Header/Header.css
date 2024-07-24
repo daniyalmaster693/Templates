@@ -12,8 +12,55 @@ body {
   min-height: 100vh;
 }
 
-.footer {
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--nunito-sans);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.right-side,
+.left-side {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.left-side img {
+  width: 100px;
+  height: 80px;
+}
+
+.navitem {
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.navitem a:visited {
   color: black;
+}
+
+.navitem a:link {
+  color: black;
+  text-decoration: none;
+  transition: var(--ease-in-out);
+}
+
+.navitem a:hover {
+  color: grey;
+}
+
+.maincontainer {
+  height: 100vh;
+  background-color: black;
+}
+
+.footer {
+  color: white;
   font-family: var(--nunito-sans);
   font-size: 11px;
   text-align: center;
@@ -24,11 +71,11 @@ body {
 }
 
 .footer a {
-  color: black;
+  color: white;
 }
 
 .footer a:visited {
-  color: black;
+  color: white;
 }
 
 @keyframes fadeIn {
