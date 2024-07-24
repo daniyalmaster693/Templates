@@ -2,6 +2,7 @@
 
 :root {
   --nunito-sans: "Nunito Sans", Arial, Helvetica, sans-serif;
+  --grey: #a0a0a0;
   --fadeIn: 0.5s forwards ease;
   --ease-in-out: all 0.3s ease-in-out;
 }
@@ -10,6 +11,23 @@ body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
+  background-color: #1e1e1e;
+  transition: var(--ease-in-out);
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+}
+
+body.light-mode {
+  background-color: #e0e0e0;
+}
+
+.maincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .appearance-toggle {
@@ -52,7 +70,7 @@ body {
 }
 
 .footer {
-  color: black;
+  color: var(--grey);
   font-family: var(--nunito-sans);
   font-size: 11px;
   text-align: center;
@@ -63,11 +81,11 @@ body {
 }
 
 .footer a {
-  color: black;
+  color: var(--grey);
 }
 
 .footer a:visited {
-  color: black;
+  color: var(--grey);
 }
 
 @keyframes fadeIn {
