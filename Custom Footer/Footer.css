@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+:root {
+  --nunito-sans: "Nunito Sans", Arial, Helvetica, sans-serif;
+  --fadeIn: 0.5s forwards ease;
+  --ease-in-out: all 0.3s ease-in-out;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.maincontainer {
+  height: 50vh;
+  background-color: black;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 320px;
+  padding: 50px;
+  padding-left: 150px;
+  padding-right: 100px;
+}
+
+.footertop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-bottom: 35px;
+}
+
+.footerlogo {
+  font-size: 20px;
+  font-family: var(--nunito-sans);
+  font-weight: 700;
+}
+
+.socials {
+  display: flex;
+  font-family: var(--nunito-sans);
+  font-size: 16px;
+  font-weight: 600;
+  gap: 14px;
+}
+
+.footerdivider {
+  width: 100%;
+  height: 0px;
+  margin-top: -2px;
+  margin-bottom: 35px;
+  border-top: 1px solid #666666;
+}
+
+.footeritem {
+  list-style-type: none;
+  font-family: "Karla";
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footeritem a:visited {
+  color: #2d2641;
+}
+
+.footeritem a:link {
+  text-decoration: none;
+  color: #2d2641;
+}
+
+.footeritem a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.links {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title a {
+  margin-left: -39px;
+}
+
+.title p {
+  color: grey;
+  font-family: var(--nunito-sans);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.credits {
+  color: black;
+  font-family: var(--nunito-sans);
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.credits a {
+  color: black;
+}
+
+.credits a:visited {
+  color: black;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
