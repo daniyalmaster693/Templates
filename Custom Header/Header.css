@@ -19,6 +19,9 @@ body {
   font-family: var(--nunito-sans);
   font-size: 16px;
   font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .right-side,
